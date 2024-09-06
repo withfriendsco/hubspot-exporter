@@ -1,0 +1,30 @@
+# HubSpot Data Exporter
+
+A Python script for exporting data from HubSpot CRM to a local SQLite database and CSV files. This tool fetches companies, contacts, notes, tasks, calls, and their associations from HubSpot's API, stores them in a SQLite database, and exports the data to CSV files.
+
+## Features
+
+- Fetches data for companies, contacts, notes, tasks, and calls from HubSpot
+- Stores data in a local SQLite database
+- Exports data to CSV files
+- Handles API rate limiting and retries
+- Supports resumable operations with checkpoints
+- Includes a test run function for limited data export
+
+## Requirements
+
+- Python 3.6+
+- HubSpot API personal access token in .env
+
+## Setup
+
+1. Clone the repository
+2. Install required packages: `pip install -r requirements.txt`
+3. Create a `.env` file in the project root and add your HubSpot API token:
+   ```
+   HUBSPOT_ACCESS_TOKEN=your_token_here
+   ```
+
+## Usage
+
+Run the main script.  It might take 24 hours to complete.  Supports stopping and resuming any time.
